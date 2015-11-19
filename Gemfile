@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+# 1. it's impressive how many Gems you have added on top of this already.
+# 2. I would consider putting in a few comments above each Gem to give a
+# small explanation of what that Gem can do / does in your app
+
+# awesome that you have AWS going!
 gem "carrierwave"
 
 gem 'cancancan', '~> 1.10'

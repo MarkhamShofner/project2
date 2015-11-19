@@ -11,7 +11,7 @@ class Ability
       end
     end
 
-    can [:update, :destroy], [Retreat, Comment] :user => user
+    can [:update, :destroy], [Retreat, Comment], :user => user
 
   end
 end

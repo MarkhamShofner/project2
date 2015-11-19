@@ -16,6 +16,18 @@
   */
 
 
+/* so far it seems like your sass/css/bootstrap work is as good as anyone's.
+may end up using some of this myself - your design chops are solid!*/
+/*it could be worth organizing this page in a more heirarchical manner. Andre
+showed me something the other day (i think in bootstrap or sass) where you can
+set up your css in more logical ways - something like
+  body {pseudo style to affect the whole body}
+    a {pseudo style that affects all as within body}
+    p {pseudo style that affects all ps within body}
+    etc...
+
+but basically the idea was to have the css page read more similarly to the way
+the developer thought about the style, when actually building the page*/
 body {
   padding-top: 5px;
   font-size: 20px;

@@ -1,31 +1,31 @@
 Rails.application.routes.draw do
   devise_for :users
 
-resources :instructors
+  resources :instructors
 
-resources :retreats do
-  resources :photos
-end
-
-resources :retreats do
-  resources :comments
-end
-
-resources :retreats do
-  member do
-    post 'add_registation'
-    delete 'remove_registration'
+  resources :retreats do
+    resources :photos
   end
-end
 
-get '/users/registered_retreats' => "registrations#index"
+  resources :retreats do
+    resources :comments
+  end
 
-resources :registrations
+  resources :retreats do
+    member do
+      post 'add_registation'
+      delete 'remove_registration'
+    end
+  end
+
+  get '/users/registered_retreats' => "registrations#index"
+
+  resources :registrations
 
 
-root to: "home#index"
+  root to: "home#index"
 
-get '/' => "home#index"
+  get '/' => "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

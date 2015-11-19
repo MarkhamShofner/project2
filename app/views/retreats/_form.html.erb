@@ -1,4 +1,7 @@
 <%= link_to '<i class="fa fa-arrow-left"></i>'.html_safe, :back%>
+
+<!-- it could be worth looking into the simple_form_for helper/gem.
+not necessarily as a refactor for this project, but to implement in the future. -->
 <%= form_for @retreat, :html => { :class =>
 'form-new-retreat' } do |f| %>
 <%= f.label :title %>

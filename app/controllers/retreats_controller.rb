@@ -52,6 +52,7 @@ class RetreatsController < ApplicationController
 
   def remove_registation
     @retreat = Retreat.find(params[:id])
+    # potentially specify which registration to destroy
     @retreat.registrations.destroy
     redirect_to retreat_path(@retreat)
   end
